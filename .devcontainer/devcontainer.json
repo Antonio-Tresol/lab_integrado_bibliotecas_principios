@@ -1,6 +1,6 @@
 {
     "image": "mcr.microsoft.com/devcontainers/python:3.12-bullseye",
-    "postCreateCommand": "pip install uv && uv tool install ruff && uv sync",
+    "postCreateCommand": "curl -s https://packagecloud.io/install/repositories/github/git-lfs/script.deb.sh | sudo bash && sudo apt-get install -y git-lfs && git lfs install && pip install uv && uv tool install ruff && uv sync",
     "customizations": {
         "vscode": {
             "extensions": [
